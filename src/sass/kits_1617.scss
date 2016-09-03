@@ -1,0 +1,4549 @@
+/*----------------------------------------*/
+$season: 1617;
+/*----------------------------------------*/
+
+/*----------------------------------------
+CONTENTS:
+------------------------------------------
+0. Keeper Reset
+
+1. Premiership
+2. Championship
+3. League One
+4. League Two
+----------------------------------------*/
+/*----------------------------------------
+0. Keeper Reset
+
+Reset all keeper kit layers to be
+overridden if needed
+----------------------------------------*/
+
+.GK {
+    .kit-layer-1 {
+        display:none;
+    }
+    .kit-layer-2 {
+        display:none;
+    }
+    .kit-layer-3 {
+        display:none;
+    }
+    .kit-layer-4 {
+        display:none;
+    }
+    .kit-layer-5 {
+        display:none;
+    }
+    .kit-layer-6 {
+        display:none;
+    }
+    .kit-layer-7 {
+        display:none;
+    }
+    .kit-layer-8 {
+        display:none;
+    }
+    .kit-detail {
+        background-repeat:no-repeat !important;
+        background-size: 100% 100% !important;
+    }
+}
+
+/*----------------------------------------
+1. Premiership
+----------------------------------------*/
+
+.afc-bournemouth_#{$season} {
+    .kit-base {
+        @extend .kf-red-1;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-1, .kf-black;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-round-btns-v1, .kf-dark-red-2;
+    }
+    .kit-layer-3 {
+        @extend .kf-shoulders-1, .kf-black;
+    }
+    .kit-layer-4 {
+        @extend .kf-shoulders-2, .kf-white;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-round-8, .kf-black;
+    }
+    .kit-layer-6 {
+        @extend .kf-sleeves-2, .kf-red-1;
+    }
+    .kit-layer-7 {
+        @extend .kf-sleeves-end-9, .kf-black;
+    }
+    .kit-layer-8 {
+        @extend .kf-sleeves-end-10, .kf-white;
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-afc-bournemouth_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-red-1;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-dark-green-2;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-dark-green-2;
+        }
+    }
+}
+.arsenal_#{$season} {
+    .kit-base {
+        @extend .kf-red-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-6, .kf-red-3;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-2, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-shoulders-1, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-sleeves-end-4, .kf-blue-3;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-v-4, .kf-white;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-arsenal_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v-2, .kf-red-3;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-black;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-light-blue-3;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-4, .kf-black;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-sleeves-11, .kf-light-blue-3;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-sleeves-12, .kf-yellow-green-3;
+        }
+        .kit-layer-5 {
+            display:block;
+            @extend .kf-sleeves-13, .kf-pink-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-arsenal-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-black;
+        }
+    }
+}
+.burnley_#{$season} {
+    .kit-base {
+        @extend .kf-dark-red-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-shoulders-1, .kf-light-blue-1;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-end-9, .kf-light-blue-1;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-v-1, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-5, .kf-light-blue-1;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-burnley_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v-2, .kf-dark-red-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-blue-3;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-black;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-4, .kf-black;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-black;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-sleeves-11, .kf-light-blue-3;
+        }
+        .kit-layer-5 {
+            display:block;
+            @extend .kf-sleeves-12, .kf-yellow-green-3;
+        }
+        .kit-layer-6 {
+            display:block;
+            @extend .kf-sleeves-13, .kf-pink-3;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-blue-3;
+        }
+    }
+}
+.chelsea_#{$season} {
+    .kit-base {
+        @extend .kf-blue-3;
+    }
+    .kit-layer-1 {
+        @extend .kf-sleeves-end-4, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-v-1, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-body-stripes-14, .kf-white;
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-chelsea_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-blue-3;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-yellow-green-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-8, .kf-grey-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-chelsea-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-yellow-green-2;
+        }
+    }
+}
+.crystal-palace_#{$season} {
+    .kit-base {
+        @extend .kf-red-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-7, .kf-blue-3;
+    }
+    .kit-layer-2 {
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-crystal-palace_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-blue-3;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-black;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-grey-2;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-sleeves-2, .kf-grey-2;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-body-hoops-6, .kf-black;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-black;
+        }
+    }
+}
+.everton_#{$season} {
+    .kit-base {
+        @extend .kf-blue-3;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-round-1, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-end-2, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-5, .kf-yellow-1;
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-everton_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-blue-3;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-yellow-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-everton-gk_#{$season}.png');
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-sleeves-2, .kf-yellow-green-3;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-sleeves-9, .kf-yellow-green-3;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-yellow-green-3;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-yellow-green-3;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-yellow-green-2;
+        }
+    }
+}
+.hull-city_#{$season} {
+    .kit-base {
+        @extend .kf-black;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-11, .kf-orange-2;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-round-btns-v3, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-2, .kf-orange-2;
+    }
+    .kit-layer-4 {
+        @extend .kf-shoulders-1, .kf-black;
+    }
+    .kit-layer-5 {
+        @extend .kf-sleeves-end-1, .kf-white;
+    }
+    .kit-layer-6 {
+        @extend .kf-collar-v-1, .kf-white;
+    }
+    .kit-layer-7 {
+        @extend .kf-collar-v-7, .kf-white;
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-hull-city_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-orange-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-dark-green-1;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-sleeves-2, .kf-dark-green-2;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-sleeves-9, .kf-dark-green-2;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-dark-green-2;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-dark-green-2;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-dark-green-1;
+        }
+    }
+}
+.leicester-city_#{$season} {
+    .kit-base {
+        @extend .kf-dark-blue-1;
+    }
+    .kit-layer-1 {
+        @extend .kf-shoulders-2, .kf-gold-2;
+    }
+    .kit-layer-2 {
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+        @extend .kf-collar-v-5, .kf-dark-blue-1;
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-leicester-city_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-dark-blue-1;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-black;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-yellow-green-3;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-4, .kf-black;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-sleeves-11, .kf-light-blue-3;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-sleeves-12, .kf-yellow-green-3;
+        }
+        .kit-layer-5 {
+            display:block;
+            @extend .kf-sleeves-13, .kf-pink-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-leicester-city-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-black;
+        }
+    }
+}
+.liverpool_#{$season} {
+    .kit-base {
+        @extend .kf-red-1;
+    }
+    .kit-layer-1 {
+        @extend .kf-sleeves-end-8, .kf-yellow-2;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-round-6, .kf-yellow-2;
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-liverpool_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-red-1;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-sleeves-1, .kf-black;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-sleeves-9, .kf-light-green-2;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-body-stripes-7, .kf-light-green-2;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-collar-round-10, .kf-black;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-liverpool-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-2;
+        }
+    }
+}
+.manchester-city_#{$season} {
+    .kit-base {
+        @extend .kf-light-blue-1;
+    }
+    .kit-layer-1 {
+        @extend .kf-sleeves-1, .kf-grey-blue-3;
+    }
+    .kit-layer-2 {
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-manchester-city_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-light-blue-1;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-yellow-green-2;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-yellow-green-3;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-sleeves-1, .kf-light-yellow-2;
+        }
+    }
+}
+.manchester-united_#{$season} {
+    .kit-base {
+        @extend .kf-red-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-round-1, .kf-red-3;
+    }
+    .kit-layer-2 {
+        @extend .kf-body-half-1, .kf-red-3;
+    }
+    .kit-layer-3 {
+        @extend .kf-shoulders-1, .kf-red-2;
+    }
+    .kit-layer-4 {
+        @extend .kf-sleeves-end-1, .kf-red-3;
+    }
+    .kit-layer-5 {
+        @extend .kf-body-stripes-14, .kf-white;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-manchester-united_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-red-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-8, .kf-dark-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-manchester-united-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-2;
+        }
+    }
+}
+.middlesbrough_#{$season} {
+    .kit-base {
+        @extend .kf-red-1;
+    }
+    .kit-layer-1 {
+        @extend .kf-shoulders-3, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-v-1, .kf-blue-3;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-v-2, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-body-sash-7, .kf-blue-3;
+    }
+    .kit-layer-5 {
+        @extend .kf-body-sash-6, .kf-white;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-middlesbrough_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-red-1;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-yellow-green-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-8, .kf-grey-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-middlesbrough-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-yellow-green-2;
+        }
+    }
+}
+.southampton_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-v-3, .kf-red-1;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-2, .kf-red-1;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-1, .kf-black;
+    }
+    .kit-layer-4 {
+        @extend .kf-sleeves-end-4, .kf-white;
+    }
+    .kit-layer-5 {
+        @extend .kf-body-stripes-16, .kf-red-1;
+    }
+    .kit-layer-6 {
+        @extend .kf-body-top-bar-4, .kf-white;
+    }
+    .kit-layer-7 {
+        @extend .kf-collar-round-11, .kf-red-1;
+    }
+    .kit-layer-8 {
+        @extend .kf-collar-round-5, .kf-black;
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-southampton_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-3;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-southampton-gk_#{$season}.png');
+        }
+    }
+}
+.stoke-city_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-1, .kf-red-1;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-v-5, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-4, .kf-red-1;
+    }
+    .kit-layer-4 {
+        @extend .kf-sleeves-end-1, .kf-white;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-stoke-city_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-dark-blue-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-black;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-dark-blue-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-stoke-city-gk_#{$season}.png');
+        }
+    }
+}
+.sunderland_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-1, .kf-red-2;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-1, .kf-red-2;
+    }
+    .kit-layer-3 {
+        @extend .kf-shoulders-3, .kf-gold-3;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-1, .kf-gold-3;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-sunderland_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-yellow-green-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-8, .kf-black;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-sunderland-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-yellow-green-2;
+        }
+    }
+}
+.swansea-city_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-round-2, .kf-light-grey-1;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-round-btns-v1, .kf-light-grey-1;
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-swansea-city_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-teal-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-2, .kf-white;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-body-stripes-14, .kf-white;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-swansea-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-teal-2;
+        }
+    }
+}
+.tottenham-hotspur_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-top-bar-3, .kf-dark-blue-3;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-v-3, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-v-1, .kf-dark-blue-3;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-7, .kf-gold-2;
+    }
+    .kit-layer-5 {
+        @extend .kf-sleeves-end-1, .kf-dark-blue-3;
+    }
+    .kit-layer-6 {
+        @extend .kf-sleeves-end-2, .kf-gold-2;
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-tottenham-hotspur_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v-2, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-blue-2;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-blue-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-tottenham-hotspur-gk_#{$season}.png');
+        }
+    }
+}
+.watford_#{$season} {
+    .kit-base {
+        @extend .kf-yellow-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-round-8, .kf-black;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-end-1, .kf-black;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-7, .kf-red-2;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-round-btns-v2, .kf-orange-2;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-watford_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-yellow-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-red-1;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-v, .kf-red-1;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-collar-v-1, .kf-white;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-watford-gk_#{$season}.png');
+        }
+    }
+}
+.west-bromwich-albion_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-1, .kf-dark-blue-3;
+    }
+    .kit-layer-2 {
+        @extend .kf-shoulders-1, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-1, .kf-dark-blue-3;
+    }
+    .kit-layer-4 {
+        @extend .kf-sleeves-end-2, .kf-light-blue-1;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-round-1, .kf-light-blue-1;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-west-bromwich-albion_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-8, .kf-black;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-west-bromwich-albion-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-2;
+        }
+    }
+}
+.west-ham-united_#{$season} {
+    .kit-base {
+        @extend .kf-dark-red-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-sleeves-2, .kf-light-blue-2;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-end-2, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-5, .kf-dark-red-2;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-round-9, .kf-white;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-round-5, .kf-light-blue-2;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-west-ham-united_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-dark-red-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-red-orange-1;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-sleeves-2, .kf-red-orange-2;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-sleeves-9, .kf-red-orange-2;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-red-orange-2;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-red-orange-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-west-ham-united-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-red-orange-1;
+        }
+    }
+}
+
+/*----------------------------------------
+2. Championship
+----------------------------------------*/
+
+.aston-villa_#{$season} {
+    .kit-base {
+        @extend .kf-dark-red-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-sleeves-2, .kf-light-blue-1;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-round-1, .kf-light-blue-1;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-round-8, .kf-light-blue-1;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-round-btns-v2, .kf-grey-3;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-aston-villa_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-dark-red-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-3;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-sleeves-2, .kf-light-green-2;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-3;
+        }
+    }
+}
+.barnsley_#{$season} {
+    .kit-base {
+        @extend .kf-red-1;
+    }
+    .kit-layer-1 {
+    }
+    .kit-layer-2 {
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-barnsley_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-red-1;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-yellow-green-3;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-black;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-yellow-green-3;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-sleeves-11, .kf-light-blue-3;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-sleeves-12, .kf-yellow-green-3;
+        }
+        .kit-layer-5 {
+            display:block;
+            @extend .kf-sleeves-13, .kf-pink-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-barnsley-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-yellow-green-3;
+        }
+    }
+}
+.birmingham-city_#{$season} {
+    .kit-base {
+        @extend .kf-dark-blue-1;
+    }
+    .kit-layer-1 {
+        @extend .kf-sleeves-end-3, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-body-stripes-14, .kf-white;
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-birmingham-city_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-dark-blue-1;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-8, .kf-dark-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-birmingham-city-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-2;
+        }
+    }
+}
+.blackburn-rovers_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-half-2, .kf-blue-2;
+    }
+    .kit-layer-2 {
+        @extend .kf-shoulders-1, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-v-1, .kf-blue-2;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-2, .kf-red-1;
+    }
+    .kit-layer-5 {
+        @extend .kf-sleeves-8, .kf-white;
+    }
+    .kit-layer-6 {
+        @extend .kf-sleeves-7, .kf-blue-2;
+    }
+    .kit-layer-7 {
+        @extend .kf-sleeves-end-2, .kf-white;
+    }
+    .kit-layer-8 {
+        @extend .kf-sleeves-end-5, .kf-red-1;
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-blackburn-rovers_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-dark-green-1;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-sleeves-2, .kf-dark-green-2;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-sleeves-9, .kf-dark-green-2;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-dark-green-2;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-dark-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-blackburn-rovers-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-dark-green-1;
+        }
+    }
+}
+.brentford_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-11, .kf-red-2;
+    }
+    .kit-layer-2 {
+        @extend .kf-shoulders-3, .kf-black;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-round-9, .kf-white;
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-brentford_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-8, .kf-dark-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-brentford-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-2;
+        }
+    }
+}
+.brighton-and-hove-albion_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-1, .kf-blue-1;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-4, .kf-blue-1;
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-brighton-and-hove-albion_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-brighton-and-hove-albion-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-3;
+        }
+    }
+}
+.bristol-city_#{$season} {
+    .kit-base {
+        @extend .kf-red-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-round-5, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-round-7, .kf-red-2;
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-bristol-city_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-red-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-dark-yellow-green-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-body-stripes-14, .kf-black;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-bristol-city-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-dark-yellow-green-2;
+        }
+    }
+}
+.burton-albion_#{$season} {
+    .kit-base {
+        @extend .kf-yellow-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-shoulders-1, .kf-black;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-2, .kf-yellow-2;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-round-9, .kf-yellow-2;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-round-6, .kf-black;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-round-10, .kf-black;
+    }
+    .kit-layer-6 {
+        @extend .kf-body-stripes-14, .kf-black;
+    }
+    .kit-layer-7 {
+        @extend .kf-sleeves-end-3, .kf-black;
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-burton-albion_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-yellow-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-2;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-2;
+        }
+    }
+}
+.cardiff-city_#{$season} {
+    .kit-base {
+        @extend .kf-blue-3;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-v-1, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-shoulders-3, .kf-white;
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-cardiff-city_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-blue-3;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-8, .kf-dark-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-cardiff-city-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-2;
+        }
+    }
+}
+.derby-county_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-shoulders-1, .kf-black;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-2, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-round-8, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-sleeves-10, .kf-black;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-round-btns-v2, .kf-light-grey-3;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-derby-county_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-red-orange-1;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-sleeves-2, .kf-red-orange-2;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-sleeves-9, .kf-red-orange-2;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-red-orange-2;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-red-orange-2;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-red-orange-1;
+        }
+    }
+}
+.fulham_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-hoops-5, .kf-red-2;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-v-1, .kf-black;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-v-2, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-shoulders-3, .kf-black;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-fulham_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-8, .kf-dark-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-fulham-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-2;
+        }
+    }
+}
+.huddersfield-town_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-15, .kf-light-blue-3;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-4, .kf-light-blue-3;
+    }
+    .kit-layer-3 {
+        @extend .kf-shoulders-1, .kf-light-blue-3;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-5, .kf-white;
+    }
+    .kit-layer-5 {
+        @extend .kf-body-hoops-9, .kf-white;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-huddersfield-town_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-yellow-green-3;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-black;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-yellow-green-3;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-sleeves-11, .kf-light-blue-3;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-sleeves-12, .kf-yellow-green-3;
+        }
+        .kit-layer-5 {
+            display:block;
+            @extend .kf-sleeves-13, .kf-pink-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-huddersfield-town-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-yellow-green-3;
+        }
+    }
+}
+.ipswich-town_#{$season} {
+    .kit-base {
+        @extend .kf-blue-3;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-v-3, .kf-blue-1;
+    }
+    .kit-layer-2 {
+        @extend .kf-body-v-4, .kf-light-blue-3;
+    }
+    .kit-layer-3 {
+        @extend .kf-body-v-5, .kf-light-blue-2;
+    }
+    .kit-layer-4 {
+        @extend .kf-sleeves-1, .kf-white;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-v-1, .kf-blue-3;
+    }
+    .kit-layer-6 {
+        @extend .kf-collar-v-8, .kf-white;
+    }
+    .kit-layer-7 {
+        @extend .kf-shoulders-3, .kf-blue-3;
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-ipswich-town_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-blue-3;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-red-1;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-8, .kf-red-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-ipswich-town-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-red-1;
+        }
+    }
+}
+.leeds-united_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-round-8, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-round-btns-v3, .kf-white;
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-leeds-united_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-dark-green-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-white;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-leeds-united-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-dark-green-2;
+        }
+    }
+}
+.newcastle-united_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-sleeves-2, .kf-black;
+    }
+    .kit-layer-2 {
+        @extend .kf-body-stripes-11, .kf-black;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-4, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-shoulders-1, .kf-white;
+    }
+    .kit-layer-5 {
+        @extend .kf-sleeves-end-2, .kf-gold-3;
+    }
+    .kit-layer-6 {
+        @extend .kf-collar-v-1, .kf-gold-3;
+    }
+    .kit-layer-7 {
+        @extend .kf-collar-v-5, .kf-black;
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-newcastle-united_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-3;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-black;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-light-green-3;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-sleeves-11, .kf-light-blue-3;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-sleeves-12, .kf-yellow-green-3;
+        }
+        .kit-layer-5 {
+            display:block;
+            @extend .kf-sleeves-13, .kf-pink-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-newcastle-united-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-3;
+        }
+    }
+}
+.norwich-city_#{$season} {
+    .kit-base {
+        @extend .kf-yellow-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-v-1, .kf-green-2;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-round-btns-v3, .kf-green-2;
+    }
+    .kit-layer-3 {
+        @extend .kf-shoulders-1, .kf-green-2;
+    }
+    .kit-layer-4 {
+        @extend .kf-sleeves-2, .kf-yellow-2;
+    }
+    .kit-layer-5 {
+        @extend .kf-sleeves-end-1, .kf-green-2;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-norwich-city_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-yellow-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-black;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-collar-round-5, .kf-yellow-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-norwich-city-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-v, .kf-black;
+        }
+    }
+}
+.nottingham-forest_#{$season} {
+    .kit-base {
+        @extend .kf-red-1;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-hoops-2, .kf-red-2;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-1, .kf-red-1;
+    }
+    .kit-layer-3 {
+        @extend .kf-shoulders-3, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-round-btns-v2, .kf-dark-red-1;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-round-1, .kf-white;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-nottingham-forest_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-red-1;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-dark-blue-1;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-8, .kf-black;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-nottingham-forest-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-black;
+        }
+    }
+}
+.preston-north-end_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-v-1, .kf-dark-blue-3;
+    }
+    .kit-layer-2 {
+        @extend .kf-shoulders-1, .kf-dark-blue-3;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-1, .kf-dark-blue-3;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-7, .kf-dark-blue-3;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-preston-north-end_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-3;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-3;
+        }
+    }
+}
+.queens-park-rangers_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-hoops-10, .kf-blue-3;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-v-1, .kf-red-2;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-1, .kf-red-2;
+    }
+    .kit-layer-4 {
+        @extend .kf-sleeves-end-13, .kf-blue-3;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-v-11, .kf-white;
+    }
+    .kit-layer-6 {
+        @extend .kf-collar-v-12, .kf-blue-2;
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-queens-park-rangers_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-yellow-1;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-body-hoops-10, .kf-yellow-2;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-v-1, .kf-white;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-collar-v-7, .kf-white;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-sleeves-2, .kf-yellow-1;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-v, .kf-yellow-1;
+        }
+    }
+}
+.reading_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-hoops-14, .kf-blue-3;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-v-1, .kf-blue-3;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-2, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-shoulders-1, .kf-white;
+    }
+    .kit-layer-5 {
+        @extend .kf-shoulders-2, .kf-blue-3;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-reading_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-pink-3;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-black;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-pink-3;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-sleeves-11, .kf-light-blue-3;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-sleeves-12, .kf-yellow-green-3;
+        }
+        .kit-layer-5 {
+            display:block;
+            @extend .kf-sleeves-13, .kf-pink-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-reading-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-pink-3;
+        }
+    }
+}
+.rotherham-united_#{$season} {
+    .kit-base {
+        @extend .kf-red-1;
+    }
+    .kit-layer-1 {
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-2, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-shoulders-1, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-1, .kf-yellow-1;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-v-5, .kf-white;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-rotherham-united_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v-2, .kf-red-1;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-black;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-yellow-green-3;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-4, .kf-black;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-sleeves-11, .kf-light-blue-3;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-sleeves-12, .kf-yellow-green-3;
+        }
+        .kit-layer-5 {
+            display:block;
+            @extend .kf-sleeves-13, .kf-pink-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-rotherham-united-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-black;
+        }
+    }
+}
+.sheffield-wednesday_#{$season} {
+    .kit-base {
+        @extend .kf-blue-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-17, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-shoulders-1, .kf-blue-2;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-1, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-round-1, .kf-white;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-round-8, .kf-white;
+    }
+    .kit-layer-6 {
+
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-sheffield-wednesday_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-blue-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-red-orange-1;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-sleeves-1, .kf-black;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-red-orange-1;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-sheffield-wednesday-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-red-orange-1;
+        }
+    }
+}
+.wigan-athletic_#{$season} {
+    .kit-base {
+        @extend .kf-blue-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-1, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-round-1, .kf-red-1;
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+        @extend .kf-sleeves-2, .kf-white;
+    }
+    .kit-layer-5 {
+        @extend .kf-sleeves-3, .kf-blue-2;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+        @extend .kf-sleeves-end-9, .kf-red-1;
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-wigan-athletic_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-1;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-body-top-bar-1, .kf-white;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-body-top-bar-2, .kf-green-1;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-sleeves-1, .kf-green-1;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-sleeves-end-9, .kf-white;
+        }
+        .kit-layer-5 {
+            display:block;
+            @extend .kf-collar-round-9, .kf-white;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-wigan-athletic-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-1;
+        }
+    }
+}
+.wolverhampton-wanderers_#{$season} {
+    .kit-base {
+        @extend .kf-orange-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-shoulders-1, .kf-black;
+    }
+    .kit-layer-2 {
+        @extend .kf-body-stripes-10, .kf-black;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-round-1, .kf-orange-2;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-round-4, .kf-black;
+    }
+    .kit-layer-5 {
+        @extend .kf-sleeves-end-2, .kf-orange-2;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-wolverhampton-wanderers_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-orange-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-black;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-yellow-green-3;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-4, .kf-black;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-sleeves-11, .kf-light-blue-3;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-sleeves-12, .kf-yellow-green-3;
+        }
+        .kit-layer-5 {
+            display:block;
+            @extend .kf-sleeves-13, .kf-pink-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-wolverhampton-wanderers-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-black;
+        }
+    }
+}
+
+/*----------------------------------------
+3. League One
+----------------------------------------*/
+.afc-wimbledon_#{$season} {
+    .kit-base {
+        @extend .kf-blue-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-hoops-11, .kf-blue-1;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-v-1, .kf-yellow-2;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-2, .kf-blue-2;
+    }
+    .kit-layer-4 {
+        @extend .kf-sleeves-end-2, .kf-yellow-2;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-afc-wimbledon_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-blue-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-3;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-black;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-sleeves-end-1, .kf-black;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-afc-wimbledon-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-3;
+        }
+    }
+}
+.bolton-wanderers_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-v-1, .kf-blue-3;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-v-5, .kf-dark-blue-3;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-round-btns-v3, .kf-dark-blue-3;
+    }
+    .kit-layer-4 {
+        @extend .kf-sleeves-12, .kf-dark-blue-3;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-bolton-wanderers_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-3;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-sleeves-2, .kf-light-green-3;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-body-hoops-6, .kf-green-2;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-body-stripes-7, .kf-light-green-3;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-body-stripes-15, .kf-light-green-3;
+        }
+        .kit-layer-5 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-black;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-3;
+        }
+    }
+}
+.bradford-city_#{$season} {
+    .kit-base {
+        @extend .kf-yellow-3;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-12, .kf-dark-red-1;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-round-1, .kf-yellow-3;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-2, .kf-dark-red-1;
+    }
+    .kit-layer-4 {
+        @extend .kf-shoulders-1, .kf-dark-red-1;
+    }
+    .kit-layer-5 {
+        @extend .kf-sleeves-end-4, .kf-yellow-3;
+    }
+    .kit-layer-6 {
+        @extend .kf-body-hoops-7, .kf-dark-red-1;
+    }
+    .kit-layer-7 {
+        @extend .kf-body-hoops-8, .kf-yellow-3;
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-bradford-city_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-orange-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-dark-green-1;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-btns-v3, .kf-dark-green-1;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-light-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-bradford-city-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-2;
+        }
+    }
+}
+.bristol-rovers_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-quarters-1, .kf-blue-3;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-v-1, .kf-blue-3;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-3, .kf-blue-3;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-7, .kf-white;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-bristol-rovers_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-bristol-rovers-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-3;
+        }
+    }
+}
+.bury_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-top-bar-5, .kf-blue-2;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-2, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-1, .kf-blue-2;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-round-1, .kf-white;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-bury_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-1;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-body-top-bar-1, .kf-white;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-body-top-bar-2, .kf-green-1;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-sleeves-1, .kf-green-1;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-sleeves-end-9, .kf-white;
+        }
+        .kit-layer-5 {
+            display:block;
+            @extend .kf-collar-round-9, .kf-white;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-bury-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-1;
+        }
+    }
+}
+.charlton-athletic_#{$season} {
+    .kit-base {
+        @extend .kf-red-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-v-1, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-shoulders-1, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-1, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-7, .kf-white;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-charlton-athletic_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-red-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-3;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-3;
+        }
+    }
+}
+.chesterfield_#{$season} {
+    .kit-base {
+        @extend .kf-blue-3;
+    }
+    .kit-layer-1 {
+        @extend .kf-shoulders-1, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-body-stripes-8, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-round-1, .kf-blue-3;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-round-4, .kf-white;
+    }
+    .kit-layer-5 {
+        @extend .kf-sleeves-end-1, .kf-blue-3;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-chesterfield_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-blue-3;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-pink-3;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-black;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-pink-3;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-sleeves-11, .kf-light-blue-3;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-sleeves-12, .kf-yellow-green-3;
+        }
+        .kit-layer-5 {
+            display:block;
+            @extend .kf-sleeves-13, .kf-pink-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-chesterfield-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-pink-3;
+        }
+    }
+}
+.coventry-city_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+    }
+    .kit-layer-2 {
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        @if $detail-visible == true {
+            background-image:url('../img/kit-detail_#{$season}/detail-coventry-city_#{$season}.png');
+        }
+        @if $detail-visible == false {
+            visibility: visible;
+            background-image:url('../img/kit-detail_#{$season}/detail-coventry-city-nd_#{$season}.png');
+        }
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-coventry-city-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-3;
+        }
+    }
+}
+.fleetwood-town_#{$season} {
+    .kit-base {
+        @extend .kf-red-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-sleeves-2, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-shoulders-1, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-v-8, .kf-white;
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-fleetwood-town_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-red-3;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-blue-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-black;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-6, .kf-black;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-fleetwood-town-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-blue-2;
+        }
+    }
+}
+.gillingham_#{$season} {
+    .kit-base {
+        @extend .kf-blue-1;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-hoops-15, .kf-blue-2;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-v-1, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-body-hoops-9, .kf-blue-1;
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-gillingham_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-blue-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-body-hoops-15, .kf-light-green-3;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-body-hoops-9, .kf-light-green-2;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-collar-round-9, .kf-white;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-2;
+        }
+    }
+}
+.millwall_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-1, .kf-dark-blue-3;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-4, .kf-dark-blue-3;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-1, .kf-orange-1;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-1, .kf-orange-1;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-v-btns-v3, .kf-orange-1;
+    }
+    .kit-layer-6 {
+        @extend .kf-collar-v-9, .kf-dark-blue-3;
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-millwall_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-dark-blue-3;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-millwall-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.milton-keynes-dons_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-sleeves-end-4, .kf-light-yellow-2;
+    }
+    .kit-layer-2 {
+        @extend .kf-body-v-6, .kf-light-yellow-2;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-14, .kf-light-yellow-2;
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-milton-keynes-dons_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-yellow-2;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-yellow-2;
+        }
+    }
+}
+.northampton-town_#{$season} {
+    .kit-base {
+        @extend .kf-dark-red-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-v-1, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-end-1, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-v-7, .kf-white;
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-northampton-town_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-dark-red-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-3;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-3;
+        }
+    }
+}
+.oldham-athletic_#{$season} {
+    .kit-base {
+        @extend .kf-blue-3;
+    }
+    .kit-layer-1 {
+        @extend .kf-sleeves-end-9, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-round-8, .kf-blue-3;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-round-btns-v3, .kf-white;
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-oldham-athletic_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-blue-3;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.oxford-united_#{$season} {
+    .kit-base {
+        @extend .kf-yellow-1;
+    }
+    .kit-layer-1 {
+        @extend .kf-sleeves-2, .kf-dark-blue-3;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-v-1, .kf-dark-blue-3;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-1, .kf-yellow-1;
+    }
+    .kit-layer-4 {
+        @extend .kf-body-stripes-19, .kf-dark-blue-3;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-v-7, .kf-dark-blue-3;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-oxford-united_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-yellow-1;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-blue-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-white;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-light-blue-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-oxford-united-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-blue-2;
+        }
+    }
+}
+.peterborough-united_#{$season} {
+    .kit-base {
+        @extend .kf-blue-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-v-1, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-shoulders-1, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-1, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-7, .kf-white;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-peterborough-united_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-blue-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-3;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-3;
+        }
+    }
+}
+.port-vale_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-top-bar-1, .kf-yellow-3;
+    }
+    .kit-layer-2 {
+        @extend .kf-body-top-bar-2, .kf-black;
+    }
+    .kit-layer-3 {
+        @extend .kf-body-hoops-5, .kf-black;
+    }
+    .kit-layer-4 {
+        @extend .kf-sleeves-2, .kf-white;
+    }
+    .kit-layer-5 {
+        @extend .kf-sleeves-end-1, .kf-black;
+    }
+    .kit-layer-6 {
+        @extend .kf-collar-v-1, .kf-yellow-3;
+    }
+    .kit-layer-7 {
+        @extend .kf-collar-v-9, .kf-white;
+    }
+    .kit-layer-8 {
+        @extend .kf-collar-v-btns-v3, .kf-yellow-3;
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-port-vale_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-port-vale-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.rochdale_#{$season} {
+    .kit-base {
+        @extend .kf-blue-3;
+    }
+    .kit-layer-1 {
+        @extend .kf-sleeves-end-2, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-body-stripes-8, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-body-stripes-9, .kf-black;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-4, .kf-white;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-v-1, .kf-black;
+    }
+    .kit-layer-6 {
+        @extend .kf-collar-v-btns-v3, .kf-black;
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-rochdale_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v-2, .kf-blue-3;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-black;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-collar-v-1, .kf-white;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-btns-v3, .kf-white;
+        }
+        .kit-collar {
+            display:block;
+            @extend .kf-collar-base-v, .kf-black;
+        }
+    }
+}
+.scunthorpe-united_#{$season} {
+    .kit-base {
+        @extend .kf-light-blue-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-sleeves-end-1, .kf-dark-red-2;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-round-1, .kf-dark-red-2;
+    }
+    .kit-layer-3 {
+        @extend .kf-body-stripes-10, .kf-dark-red-2;
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-scunthorpe-united_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-light-blue-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.sheffield-united_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-2, .kf-red-2;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-1, .kf-black;
+    }
+    .kit-layer-3 {
+        @extend .kf-shoulders-3, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-round-9, .kf-black;
+    }
+    .kit-layer-5 {
+        @extend .kf-sleeves-9, .kf-red-2;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-sheffield-united_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-8, .kf-dark-green-2;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-2;
+        }
+    }
+}
+.shrewsbury-town_#{$season} {
+    .kit-base {
+        @extend .kf-yellow-3;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-11, .kf-blue-1;
+    }
+    .kit-layer-2 {
+        @extend .kf-body-hoops-7, .kf-yellow-3;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-1, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-1, .kf-white;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-v-7, .kf-dark-blue-3;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-shrewsbury-town_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-yellow-3;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-yellow-3;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-yellow-3;
+        }
+    }
+}
+.southend-united_#{$season} {
+    .kit-base {
+        @extend .kf-dark-blue-3;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-v-1, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-shoulders-1, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-1, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-7, .kf-white;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-southend-united_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-dark-blue-3;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-yellow-green-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-southend-united-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-yellow-green-3;
+        }
+    }
+}
+.swindon-town_#{$season} {
+    .kit-base {
+        @extend .kf-red-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-top-bar-1, .kf-red-3;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-1, .kf-red-3;
+    }
+    .kit-layer-3 {
+        @extend .kf-shoulders-1, .kf-red-2;
+    }
+    .kit-layer-4 {
+        @extend .kf-shoulders-2, .kf-white;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-v-1, .kf-red-2;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-swindon-town_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-red-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-blue-3;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-black;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-4, .kf-black;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-black;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-sleeves-11, .kf-light-blue-3;
+        }
+        .kit-layer-5 {
+            display:block;
+            @extend .kf-sleeves-12, .kf-yellow-green-3;
+        }
+        .kit-layer-6 {
+            display:block;
+            @extend .kf-sleeves-13, .kf-pink-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-swindon-town-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-blue-3;
+        }
+    }
+}
+.walsall_#{$season} {
+    .kit-base {
+        @extend .kf-red-1;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-chequed-1, .kf-black;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-v-1, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-2, .kf-red-1;
+    }
+    .kit-layer-4 {
+        @extend .kf-sleeves-end-1, .kf-black;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-walsall_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-red-1;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-yellow-green-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-walsall-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-yellow-green-3;
+        }
+    }
+}
+
+/*----------------------------------------
+4. League Two
+----------------------------------------*/
+
+.accrington-stanley_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-2, .kf-red-1;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-1, .kf-red-1;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-v-1, .kf-red-1;
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-accrington-stanley_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-accrington-stanley-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.barnet_#{$season} {
+    .kit-base {
+        @extend .kf-black;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-round-1, .kf-black;
+    }
+    .kit-layer-2 {
+        @extend .kf-body-hoops-4, .kf-brown-3;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-1, .kf-brown-2;
+    }
+    .kit-layer-4 {
+        @extend .kf-body-sash-5, .kf-orange-2;
+    }
+    .kit-layer-5 {
+        @extend .kf-sleeves-1, .kf-black;
+    }
+    .kit-layer-6 {
+        @extend .kf-body-bottom-trim, .kf-black;
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-barnet_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-black;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-barnet-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.blackpool_#{$season} {
+    .kit-base {
+        @extend .kf-red-orange-1;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-v-1, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-v-8, .kf-red-orange-1;
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-blackpool_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-red-orange-1;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-yellow-2;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-v, .kf-yellow-2;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-sleeves-end-1, .kf-black;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-v-7, .kf-white;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-collar-v-9, .kf-black;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-collar-round-btns-v3, .kf-white;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-blackpool-gk_#{$season}.png');
+        }
+    }
+}
+.cambridge-united_#{$season} {
+    .kit-base {
+        @extend .kf-orange-1;
+    }
+    .kit-layer-1 {
+        @extend .kf-shoulders-1, .kf-black;
+    }
+    .kit-layer-2 {
+        @extend .kf-body-stripes-10, .kf-black;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-v-1, .kf-black;
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+        @extend .kf-collar-v-5, .kf-black;
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-cambridge-united_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-orange-1;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-blue-3;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-black;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-4, .kf-black;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-black;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-sleeves-11, .kf-light-blue-3;
+        }
+        .kit-layer-5 {
+            display:block;
+            @extend .kf-sleeves-12, .kf-yellow-green-3;
+        }
+        .kit-layer-6 {
+            display:block;
+            @extend .kf-sleeves-13, .kf-pink-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-cambridge-united-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-blue-3;
+        }
+    }
+}
+.carlisle-united_#{$season} {
+    .kit-base {
+        @extend .kf-blue-3;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-round-1, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-end-1, .kf-white;
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-carlisle-united_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-blue-3;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-yellow-green-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-carlisle-united-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-yellow-green-3;
+        }
+    }
+}
+.cheltenham-town_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-quarters-1, .kf-red-1;
+    }
+    .kit-layer-2 {
+        @extend .kf-body-half-1, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-7, .kf-red-1;
+    }
+    .kit-layer-4 {
+        @extend .kf-sleeves-end-2, .kf-black;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-v-1, .kf-red-1;
+    }
+    .kit-layer-6 {
+        @extend .kf-collar-v-9, .kf-black;
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        @if $detail-visible == true {
+            background-image:url('../img/kit-detail_#{$season}/detail-cheltenham-town_#{$season}.png');
+        }
+        @if $detail-visible == false {
+            visibility: visible;
+            background-image:url('../img/kit-detail_#{$season}/detail-cheltenham-town-nd_#{$season}.png');
+        }
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-cheltenham-town-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.colchester-united_#{$season} {
+    .kit-base {
+        @extend .kf-blue-1;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-2, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-body-stripes-24, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-shoulders-1, .kf-blue-1;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-5, .kf-blue-1;
+    }
+    .kit-layer-5 {
+        @extend .kf-sleeves-2, .kf-white;
+    }
+    .kit-layer-6 {
+        @extend .kf-sleeves-4, .kf-blue-1;
+    }
+    .kit-layer-7 {
+        @extend .kf-sleeves-end-1, .kf-blue-1;
+    }
+    .kit-layer-8 {
+        @extend .kf-sleeves-12, .kf-white;
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-colchester-united_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-colchester-united-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.crawley-town_#{$season} {
+    .kit-base {
+        @extend .kf-red-1;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-v-1, .kf-black;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-v-5, .kf-black;
+    }
+    .kit-layer-3 {
+        @extend .kf-shoulders-1, .kf-black;
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-crawley-town_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-red-1;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-yellow-green-3;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-black;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-4, .kf-black;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-black;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-sleeves-11, .kf-light-blue-3;
+        }
+        .kit-layer-5 {
+            display:block;
+            @extend .kf-sleeves-12, .kf-yellow-green-3;
+        }
+        .kit-layer-6 {
+            display:block;
+            @extend .kf-sleeves-13, .kf-pink-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-crawley-town-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-yellow-green-3;
+        }
+    }
+}
+.crewe-alexandra_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-hoops-12, .kf-red-1;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-2, .kf-red-1;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-v-1, .kf-black;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-7, .kf-black;
+    }
+    .kit-layer-5 {
+        @extend .kf-sleeves-end-9, .kf-black;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-crewe-alexandra_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-crewe-alexandra-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.doncaster-rovers_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-hoops-14, .kf-red-1;
+    }
+    .kit-layer-2 {
+        @extend .kf-body-top-bar-2, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-body-hoops-13, .kf-dark-blue-3;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-1, .kf-dark-blue-3;
+    }
+    .kit-layer-5 {
+        @extend .kf-shoulders-2, .kf-red-2;
+    }
+    .kit-layer-6 {
+        @extend .kf-collar-v-7, .kf-dark-blue-3;
+    }
+    .kit-layer-7 {
+        @extend .kf-sleeves-2, .kf-red-1;
+    }
+    .kit-layer-8 {
+        @extend .kf-sleeves-end-1, .kf-dark-blue-3;
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-doncaster-rovers_#{$season}.png');
+    }
+    .kit-collar {
+        @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.exeter-city_#{$season} {
+    .kit-base {
+        @extend .kf-red-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-11, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-v-1, .kf-black;
+    }
+    .kit-layer-3 {
+        @extend .kf-shoulders-1, .kf-red-2;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-5, .kf-black;
+    }
+    .kit-layer-5 {
+        @extend .kf-sleeves-end-11, .kf-black;
+    }
+    .kit-layer-6 {
+        @extend .kf-sleeves-end-12, .kf-white;
+    }
+    .kit-layer-7 {
+        @extend .kf-collar-v-10, .kf-white;
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-exeter-city_#{$season}.png');
+    }
+    .kit-collar {
+        @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-exeter-city-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.grimsby-town_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-2, .kf-black;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-4, .kf-black;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-round-8, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-round-btns-v3, .kf-red-1;
+    }
+    .kit-layer-5 {
+        @extend .kf-body-hoops-6, .kf-black;
+    }
+    .kit-layer-6 {
+        @extend .kf-sleeves-end-1, .kf-red-1;
+    }
+    .kit-layer-7 {
+        @extend .kf-body-bottom-trim, .kf-black;
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-grimsby-town_#{$season}.png');
+    }
+    .kit-collar {
+        @extend .kf-collar-base-round, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.hartlepool-united_#{$season} {
+    .kit-base {
+        @extend .kf-blue-2;
+    }
+    .kit-layer-1 {
+    }
+    .kit-layer-2 {
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        @if $detail-visible == true {
+            background-image:url('../img/kit-detail_#{$season}/detail-hartlepool-united_#{$season}.png');
+        }
+        @if $detail-visible == false {
+            visibility: visible;
+            background-image:url('../img/kit-detail_#{$season}/detail-hartlepool-united-nd_#{$season}.png');
+        }
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-blue-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-hartlepool-united-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.leyton-orient_#{$season} {
+    .kit-base {
+        @extend .kf-red-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-sleeves-end-9, .kf-black;
+    }
+    .kit-layer-2 {
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-leyton-orient_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-red-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-leyton-orient-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.luton-town_#{$season} {
+    .kit-base {
+        @extend .kf-red-orange-1;
+    }
+    .kit-layer-1 {
+        @extend .kf-shoulders-1, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-round-1, .kf-black;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-round-4, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-sleeves-end-1, .kf-white;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-luton-town_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-red-orange-1;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-light-green-3;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-black;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-light-green-3;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-light-green-3;
+        }
+    }
+}
+.mansfield-town_#{$season} {
+    .kit-base {
+        @extend .kf-yellow-3;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-8, .kf-blue-2;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-round-8, .kf-blue-2;
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-mansfield-town_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-yellow-3;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-mansfield-town-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.morecambe_#{$season} {
+    .kit-base {
+        @extend .kf-red-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-20, .kf-black;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-2, .kf-black;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-end-7, .kf-white;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-v-1, .kf-white;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-morecambe_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-red-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.newport-county_#{$season} {
+    .kit-base {
+        @extend .kf-yellow-3;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-round-8, .kf-black;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-round-btns-v2, .kf-orange-3;
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-newport-county_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-yellow-3;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-newport-county-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.notts-county_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-1, .kf-black;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-4, .kf-black;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-v-1, .kf-black;
+    }
+    .kit-layer-4 {
+        @extend .kf-shoulders-1, .kf-black;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-v-7, .kf-black;
+    }
+    .kit-layer-6 {
+        @extend .kf-sleeves-end-9, .kf-black;
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-notts-county_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-notts-county-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.plymouth-argyle_#{$season} {
+    .kit-base {
+        @extend .kf-dark-green-1;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-10, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-shoulders-1, .kf-black;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-v-1, .kf-black;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-round-8, .kf-black;
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-plymouth-argyle_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-dark-green-1;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-white;
+        }
+        .kit-layer-1 {
+            display:block;
+            @extend .kf-collar-round-1, .kf-black;
+        }
+        .kit-layer-2 {
+            display:block;
+            @extend .kf-collar-round-4, .kf-white;
+        }
+        .kit-layer-3 {
+            display:block;
+            @extend .kf-shoulders-1, .kf-black;
+        }
+        .kit-layer-4 {
+            display:block;
+            @extend .kf-sleeves-11, .kf-light-blue-3;
+        }
+        .kit-layer-5 {
+            display:block;
+            @extend .kf-sleeves-12, .kf-yellow-green-3;
+        }
+        .kit-layer-6 {
+            display:block;
+            @extend .kf-sleeves-13, .kf-pink-3;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-plymouth-argyle-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-white;
+        }
+    }
+}
+.portsmouth_#{$season} {
+    .kit-base {
+        @extend .kf-blue-2;
+    }
+    .kit-layer-1 {
+        @extend .kf-collar-round-11, .kf-white;
+    }
+    .kit-layer-2 {
+        @extend .kf-sleeves-end-1, .kf-white;
+    }
+    .kit-layer-3 {
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-portsmouth_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-blue-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.stevenage_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-21, .kf-red-1;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-round-btns-v3, .kf-white;
+    }
+    .kit-layer-3 {
+        @extend .kf-collar-v-5, .kf-white;
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-stevenage_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-stevenage-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.wycombe-wanderers_#{$season} {
+    .kit-base {
+        @extend .kf-dark-blue-3;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-quarters-1, .kf-light-blue-2;
+    }
+    .kit-layer-2 {
+        @extend .kf-body-hoops-4, .kf-light-blue-2;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-8, .kf-light-blue-2;
+    }
+    .kit-layer-4 {
+        @extend .kf-collar-round-1, .kf-dark-blue-3;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-round-4, .kf-light-blue-2;
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-wycombe-wanderers_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-light-blue-2;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-detail {
+            background-image:url('../img/kit-detail_#{$season}/detail-wycombe-wanderers-gk_#{$season}.png');
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}
+.yeovil-town_#{$season} {
+    .kit-base {
+        @extend .kf-white;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-hoops-14, .kf-light-green-3;
+    }
+    .kit-layer-2 {
+        @extend .kf-collar-v-5, .kf-light-green-3;
+    }
+    .kit-layer-3 {
+        @extend .kf-sleeves-2, .kf-black;
+    }
+    .kit-layer-4 {
+    }
+    .kit-layer-5 {
+    }
+    .kit-layer-6 {
+    }
+    .kit-layer-7 {
+    }
+    .kit-layer-8 {
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-yeovil-town_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-v, .kf-white;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-green-2;
+        }
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-green-2;
+        }
+    }
+}

@@ -1,0 +1,392 @@
+@font-face {
+    font-family: 'kitfont';
+    src:    url('../fonts/kitfont/kitfont.eot?agfefa');
+    src:    url('../fonts/kitfont/kitfont.eot?agfefa#iefix') format('embedded-opentype'),
+        url('../fonts/kitfont/kitfont.ttf?agfefa') format('truetype'),
+        url('../fonts/kitfont/kitfont.woff?agfefa') format('woff'),
+        url('../fonts/kitfont/kitfont.svg?agfefa#kitfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="kf-"], [class*=" kf-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'kitfont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.kf-base:before {
+  content: "\e914";
+}
+.kf-sleeves-1:before {
+  content: "\e900";
+}
+.kf-sleeves-2:before {
+  content: "\e901";
+}
+.kf-sleeves-3:before {
+  content: "\e902";
+}
+.kf-sleeves-4:before {
+  content: "\e903";
+}
+.kf-sleeves-5:before {
+  content: "\e904";
+}
+.kf-sleeves-6:before {
+  content: "\e905";
+}
+.kf-sleeves-7:before {
+  content: "\e906";
+}
+.kf-sleeves-8:before {
+  content: "\e915";
+}
+.kf-sleeves-9:before {
+  content: "\e953";
+}
+.kf-sleeves-10:before {
+  content: "\e956";
+}
+.kf-sleeves-11:before {
+  content: "\e957";
+}
+.kf-sleeves-12:before {
+  content: "\e958";
+}
+.kf-sleeves-13:before {
+  content: "\e959";
+}
+.kf-sleeves-14:before {
+  content: "\e95f";
+}
+.kf-sleeves-end-1:before {
+  content: "\e916";
+}
+.kf-sleeves-end-2:before {
+  content: "\e918";
+}
+.kf-sleeves-end-3:before {
+  content: "\e91a";
+}
+.kf-sleeves-end-4:before {
+  content: "\e91b";
+}
+.kf-sleeves-end-5:before {
+  content: "\e933";
+}
+.kf-sleeves-end-6:before {
+  content: "\e91c";
+}
+.kf-sleeves-end-7:before {
+  content: "\e907";
+}
+.kf-sleeves-end-8:before {
+  content: "\e908";
+}
+.kf-sleeves-end-9:before {
+  content: "\e948";
+}
+.kf-sleeves-end-10:before {
+  content: "\e952";
+}
+.kf-sleeves-end-12:before {
+  content: "\e95c";
+}
+.kf-sleeves-end-11:before {
+  content: "\e95d";
+}
+.kf-sleeves-end-13:before {
+  content: "\e967";
+}
+.kf-shoulders-1:before {
+  content: "\e90a";
+}
+.kf-shoulders-2:before {
+  content: "\e90b";
+}
+.kf-shoulders-3:before {
+  content: "\e90d";
+}
+.kf-shoulders-8:before {
+  content: "\e943";
+}
+.kf-collar-base-round:before {
+  content: "\e920";
+}
+.kf-collar-base-v:before {
+  content: "\e921";
+}
+.kf-collar-base-v-2:before {
+  content: "\e92d";
+}
+.kf-collar-round-1:before {
+  content: "\e923";
+}
+.kf-collar-round-2:before {
+  content: "\e91d";
+}
+.kf-collar-round-3:before {
+  content: "\e91e";
+}
+.kf-collar-round-4:before {
+  content: "\e937";
+}
+.kf-collar-round-5:before {
+  content: "\e91f";
+}
+.kf-collar-round-6:before {
+  content: "\e910";
+}
+.kf-collar-round-7:before {
+  content: "\e922";
+}
+.kf-collar-round-8:before {
+  content: "\e93f";
+}
+.kf-collar-round-9:before {
+  content: "\e94f";
+}
+.kf-collar-round-11:before {
+  content: "\e963";
+}
+.kf-collar-round-10:before {
+  content: "\e95a";
+}
+.kf-collar-round-btns-v1:before {
+  content: "\e940";
+}
+.kf-collar-round-btns-v2:before {
+  content: "\e950";
+}
+.kf-collar-round-btns-v3:before {
+  content: "\e951";
+}
+.kf-collar-v-1:before {
+  content: "\e911";
+}
+.kf-collar-v-2:before {
+  content: "\e912";
+}
+.kf-collar-v-3:before {
+  content: "\e913";
+}
+.kf-collar-v-4:before {
+  content: "\e92e";
+}
+.kf-collar-v-5:before {
+  content: "\e90c";
+}
+.kf-collar-v-6:before {
+  content: "\e90e";
+}
+.kf-collar-v-7:before {
+  content: "\e90f";
+}
+.kf-collar-v-8:before {
+  content: "\e954";
+}
+.kf-collar-v-9:before {
+  content: "\e95b";
+}
+.kf-collar-v-10:before {
+  content: "\e95e";
+}
+.kf-collar-v-11:before {
+  content: "\e969";
+}
+.kf-collar-v-12:before {
+  content: "\e968";
+}
+.kf-collar-v-btns-v3:before {
+  content: "\e941";
+}
+.kf-body-half-1:before {
+  content: "\e925";
+}
+.kf-body-half-2:before {
+  content: "\e926";
+}
+.kf-body-square:before {
+  content: "\e927";
+}
+.kf-body-stripes-1:before {
+  content: "\e928";
+}
+.kf-body-stripes-2:before {
+  content: "\e929";
+}
+.kf-body-stripes-3:before {
+  content: "\e917";
+}
+.kf-body-stripes-4:before {
+  content: "\e919";
+}
+.kf-body-stripes-5:before {
+  content: "\e92a";
+}
+.kf-body-stripes-6:before {
+  content: "\e92f";
+}
+.kf-body-stripes-7:before {
+  content: "\e932";
+}
+.kf-body-stripes-8:before {
+  content: "\e934";
+}
+.kf-body-stripes-9:before {
+  content: "\e938";
+}
+.kf-body-stripes-10:before {
+  content: "\e93e";
+}
+.kf-body-stripes-11:before {
+  content: "\e947";
+}
+.kf-body-stripes-12:before {
+  content: "\e94a";
+}
+.kf-body-stripes-13:before {
+  content: "\e94e";
+}
+.kf-body-stripes-14:before {
+  content: "\e955";
+}
+.kf-body-stripes-15:before {
+  content: "\e961";
+}
+.kf-body-stripes-16:before {
+  content: "\e964";
+}
+.kf-body-stripes-17:before {
+  content: "\e96c";
+}
+.kf-body-stripes-18:before {
+  content: "\e96d";
+}
+.kf-body-stripes-19:before {
+  content: "\e96e";
+}
+.kf-body-stripes-20:before {
+  content: "\e970";
+}
+.kf-body-stripes-21:before {
+  content: "\e971";
+}
+.kf-body-stripes-22:before {
+  content: "\e972";
+}
+.kf-body-stripes-23:before {
+  content: "\e976";
+}
+.kf-body-stripes-24:before {
+  content: "\e973";
+}
+.kf-body-hoops-2:before {
+  content: "\e94d";
+}
+.kf-body-hoops-3:before {
+  content: "\e949";
+}
+.kf-body-hoops-4:before {
+  content: "\e93d";
+}
+.kf-body-hoops-5:before {
+  content: "\e936";
+}
+.kf-body-hoops-6:before {
+  content: "\e942";
+}
+.kf-body-hoops-7:before {
+  content: "\e94b";
+}
+.kf-body-hoops-8:before {
+  content: "\e94c";
+}
+.kf-body-hoops-9:before {
+  content: "\e962";
+}
+.kf-body-hoops-10:before {
+  content: "\e966";
+}
+.kf-body-hoops-11:before {
+  content: "\e96f";
+}
+.kf-body-hoops-12:before {
+  content: "\e974";
+}
+.kf-body-hoops-13:before {
+  content: "\e975";
+}
+.kf-body-hoops-14:before {
+  content: "\e977";
+}
+.kf-body-hoops-15:before {
+  content: "\e979";
+}
+.kf-body-chequed-1:before {
+  content: "\e96a";
+}
+.kf-body-top-bar-1:before {
+  content: "\e92b";
+}
+.kf-body-top-bar-2:before {
+  content: "\e92c";
+}
+.kf-body-top-bar-3:before {
+  content: "\e935";
+}
+.kf-body-top-bar-4:before {
+  content: "\e965";
+}
+.kf-body-top-bar-5:before {
+  content: "\e96b";
+}
+.kf-body-v-3:before {
+  content: "\e924";
+}
+.kf-body-v-4:before {
+  content: "\e930";
+}
+.kf-body-v-5:before {
+  content: "\e931";
+}
+.kf-body-v-6:before {
+  content: "\e960";
+}
+.kf-body-sash-1:before {
+  content: "\e909";
+}
+.kf-body-sash-2:before {
+  content: "\e939";
+}
+.kf-body-sash-3:before {
+  content: "\e93a";
+}
+.kf-body-sash-4:before {
+  content: "\e93b";
+}
+.kf-body-sash-5:before {
+  content: "\e93c";
+}
+.kf-body-sash-6:before {
+  content: "\e945";
+}
+.kf-body-sash-7:before {
+  content: "\e946";
+}
+.kf-body-bottom-trim:before {
+  content: "\e944";
+}
+.kf-body-quarters-1:before {
+  content: "\e978";
+}

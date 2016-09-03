@@ -1,0 +1,151 @@
+/*----------------------------------------
+CONTENTS:
+------------------------------------------
+1. Kit Variables
+2. Kit Defaults
+3. Extras
+4. Example Media Query
+----------------------------------------*/
+
+/*----------------------------------------
+1. Kit Variables
+----------------------------------------*/
+$kit-size: 80px;
+$detail-visible: true; 
+
+/*----------------------------------------
+2. Kit Defaults
+----------------------------------------*/
+
+@if $detail-visible == true {
+    .kit-detail {
+        visibility: visible;
+    }
+}
+@else {
+    .kit-detail {
+        visibility: hidden;
+    }
+}
+
+.kit,
+.kit-base,
+.kit-layer-1,
+.kit-layer-2,
+.kit-layer-3,
+.kit-layer-4,
+.kit-layer-5,
+.kit-layer-6,
+.kit-layer-7,
+.kit-layer-8,
+.kit-collar {
+  &::before,
+  &::after {
+    font-family:'kitfont';
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    height:$kit-size;
+    width:$kit-size;
+    line-height:$kit-size;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+.kit {
+    position:relative;
+    font-size:$kit-size;
+    height:$kit-size;
+    width:$kit-size;
+    align-self:center;
+    &::before {
+        z-index:11;
+        content:'';
+        background-image:url('../img/kit-shadows.svg');
+    }
+    .kit-base {
+      @extend .kf-base;
+      z-index:0;
+    }
+    .kit-layer-1 {
+      z-index:1;
+    }
+    .kit-layer-2 {
+      z-index:2;
+    }
+    .kit-layer-3 {
+      z-index:3;
+    }
+    .kit-layer-4 {
+      z-index:4;
+    }
+    .kit-layer-5 {
+      z-index:5;
+    }
+    .kit-layer-6 {
+      z-index:6;
+    }
+    .kit-layer-7 {
+      z-index:7;
+    }
+    .kit-layer-8 {
+      z-index:8;
+    }
+    .kit-detail {
+      z-index:9;
+      background-repeat:no-repeat;
+      position: relative;
+      height: 100%;
+      background-size: 100% 100%;
+    }
+    .kit-collar {
+      z-index:10;
+    }
+}
+
+/*----------------------------------------
+3. Extras
+----------------------------------------*/
+
+.kf-collar-v-5,
+.kf-collar-v-9,
+.kf-collar-round-8 {
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+}
+
+/*----------------------------------------
+4. Example Media Query
+----------------------------------------*/
+
+@media (max-width: 600px) {
+    .kit {
+        font-size:$kit-size * 0.6;
+        height:$kit-size * 0.6;
+        width:$kit-size * 0.6;
+        &::before,
+        &::after {
+            font-size:$kit-size * 0.6;
+            height:$kit-size * 0.6;
+            width:$kit-size * 0.6;
+        }
+        .kit-base,
+        .kit-layer-1,
+        .kit-layer-2,
+        .kit-layer-3,
+        .kit-layer-4,
+        .kit-layer-5,
+        .kit-layer-6,
+        .kit-layer-7,
+        .kit-layer-8,
+        .kit-collar {
+          &::before,
+          &::after {
+              font-size:$kit-size * 0.6;
+              height:$kit-size * 0.6;
+              width:$kit-size * 0.6;
+              line-height:$kit-size * 0.6;
+          }
+      }
+    }
+}
