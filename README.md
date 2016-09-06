@@ -162,7 +162,7 @@ Contains all the font mappings
 ```
 kits_1617.scss
 
-Contains the styling for all 92 EFL teams
+Contains the styling for all 92 EPL/EFL teams
 ```
 
 # Variables
@@ -179,7 +179,7 @@ default = 80px
 
 **$detail-visible**
 
-This variable will show or hide the kit detail layer, effectively showing or hiding the kit badge, sponsor and manufacturer. Ideal if you want to avoid licensing issues ;)
+This variable will show or hide the content of the '.kit-detail' layer, effectively showing or hiding the team badge, sponsor and manufacturer. Ideal if you want to avoid licensing issues ;)
 
 ```
 default = true
