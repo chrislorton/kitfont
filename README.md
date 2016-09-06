@@ -256,3 +256,12 @@ An example of how to apply this to a team:
 You can refer to the demo page 'demo/kit-components.html' to see the current available kit components and 'demo/colours.html' to see default list of colour values. 
 
 # Compatibility 
+
+Not supported in IE7 and below. 
+
+There is a known incompatability on certain kits that contain gradients when using non-Webkit browsers. During the 16/17 season this includes:  
+- Coventry City
+- Cheltenham Town
+- Hartlepool United
+
+By default (with $kit-detail set to 'true') this will not be an issue as the gradient effect is added to the .'kit-detail' PNG image. However, with $kit-detail set to 'false' the gradient effect is reproduced by using a font mask and a text-gradient which is currently only supported in Webkit browsers.
