@@ -4,17 +4,17 @@ All you need to create a kit is the following HTML structure. Simply replace the
 
 ```
 <div class="kit wigan-athletic_1617">
-  <div class="kit-base"></div>
-  <div class="kit-layer-1"></div>
-  <div class="kit-layer-2"></div>
-  <div class="kit-layer-3"></div>
-  <div class="kit-layer-4"></div>
-  <div class="kit-layer-5"></div>
-  <div class="kit-layer-6"></div>
-  <div class="kit-layer-7"></div>
-  <div class="kit-layer-8"></div>
-  <div class="kit-detail"></div>
-  <div class="kit-collar"></div>
+	  <div class="kit-base"></div>
+	  <div class="kit-layer-1"></div>
+	  <div class="kit-layer-2"></div>
+	  <div class="kit-layer-3"></div>
+	  <div class="kit-layer-4"></div>
+	  <div class="kit-layer-5"></div>
+	  <div class="kit-layer-6"></div>
+	  <div class="kit-layer-7"></div>
+	  <div class="kit-layer-8"></div>
+	  <div class="kit-detail"></div>
+	  <div class="kit-collar"></div>
 </div>
 ```
 
@@ -124,7 +124,62 @@ All you need to create a kit is the following HTML structure. Simply replace the
 - wycombe-wanderers_1617
 - yeovil-town_1617
 
-# Compiling with SASS
+# Using SASS
+
+Inside the /src/sass folder you'll find the following files:
+
+```
+style.scss
+
+The master file from which to compile
+```
+
+```
+colours.scss
+
+Contains a list of colour variables
+```
+
+```
+kit-templates.scss
+
+The master file containing the base styles for the kits
+```
+
+```
+kitfont.scss
+
+Contains all the font mappings
+```
+```
+kits_1617.scss
+
+Contains all the styling for all 92 EFL teams
+```
+
+# Variables
+
+Inside kit-templates.scss there are two master variables:
+
+**$kit-size**
+
+This is the master value which controls the base sizing of the font.
+
+```
+default = 80px
+```
+
+**$detail-visible**
+
+This variable will show or hide the kit detail layer, effectively showing or hiding the kit badge, sponsor and manufacturer. Ideal if you want to avoid licensing issues ;)
+
+```
+default = true
+```
+```
+true = shows the kit detail
+false = hides the kit detail
+```
 
 # Adding Custom Kits
 
