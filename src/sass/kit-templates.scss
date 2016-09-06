@@ -11,7 +11,7 @@ CONTENTS:
 1. Kit Variables
 ----------------------------------------*/
 $kit-size: 80px;
-$detail-visible: true; 
+$detail-visible: true;
 
 /*----------------------------------------
 2. Kit Defaults
@@ -58,7 +58,6 @@ $detail-visible: true;
     font-size:$kit-size;
     height:$kit-size;
     width:$kit-size;
-    align-self:center;
     &::before {
         z-index:11;
         content:'';
