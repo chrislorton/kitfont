@@ -197,20 +197,20 @@ Each kit is made of the following layers: kit-base, kit-layer-1, kit-layer-2, ki
 
 You can also create unique goalkeeper styles by adding styles under the '.GK' class.
 
-The layer structure of a kit is as follows:
+The layer structure of a kit is as follows:  
 
-**kit-base**  
+**.kit-base**  
 Set the default base colour of the kit
 
-**kit-layer-1-8**  
+**.kit-layer-(1|2|3|4|5|6|7|8)**  
 A series of layers which are stacked on top of one another. Layer 1 is the 'bottom' layer, layer 8 is the 'top' layer.
 
-**kit-detail**  
+**.kit-detail**  
 Contains a PNG image of the kit detail (sponsor, badge, manufacturer)
 
 If $kit-visible is set to false the contents of this layer will not appear
 
-**kit-collar**  
+**.kit-collar**  
 Sets the collar style - there are currently 3 variants:  
 - .kf-collar-base-round  
 - .kf-collar-base-v  
