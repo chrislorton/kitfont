@@ -197,6 +197,8 @@ Each kit is made of the following layers: kit-base, kit-layer-1, kit-layer-2, ki
 
 You can also create unique goalkeeper styles by adding styles under the '.GK' class.
 
+The layer structure of a kit is as follows:
+
 **kit-base**  
 Set the default base colour of the kit
 
