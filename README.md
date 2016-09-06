@@ -124,6 +124,14 @@ All you need to create a kit is the following HTML structure. Simply replace the
 - wycombe-wanderers_1617
 - yeovil-town_1617
 
+The goalkeeper kits are achieved by adding the class '.GK' to the 'kit' layer like so:
+
+```
+<div class="kit wigan-athletic_1617 GK">
+	  ...
+</div>
+```
+
 # Using SASS
 
 Inside the /src/sass folder you'll find the following files:
@@ -154,7 +162,7 @@ Contains all the font mappings
 ```
 kits_1617.scss
 
-Contains all the styling for all 92 EFL teams
+Contains the styling for all 92 EFL teams
 ```
 
 # Variables
@@ -182,5 +190,63 @@ false = hides the kit detail
 ```
 
 # Adding Custom Kits
+
+You can add as many kits as you like by simply adding your own SASS.
+
+Each kit is made of the following layers: kit-base, kit-layer-1, kit-layer-2, kit-layer-3, kit-layer-4, kit-layer-5, kit-layer-6, kit-layer-7, kit-layer-8, kit-detail, kit-collar
+
+You can also create unique goalkeeper styles by adding styles under the '.GK' class.
+
+**kit-base**
+Style this to change the default base colour of the kit
+
+**kit-layer-1-8**
+A series of layers which are stacked on top of one another. Layer 1 is the lowest, layer 8 is the highest.
+
+**kit-detail**
+Contains a PNG image of the kit detail (sponsor, badge, manufacturer) - if $kit-visible is set to false this will not appear
+
+**kit-collar**
+Styles the collar - there are currently 3 variants:
+.kf-collar-base-round
+.kf-collar-base-v
+.kf-collar-base-v-2
+
+All you need to do to is extend the desired element and set the colour, eg:
+```
+@extend .kf-body-stripes-1, .kf-black;
+```
+
+An example of how to apply this to a team:
+
+```
+.your-team-name_#{$season} {
+    .kit-base {
+        @extend .kf-red-1;
+    }
+    .kit-layer-1 {
+        @extend .kf-body-stripes-1, .kf-black;
+    }
+    .kit-detail {
+        background-image:url('../img/kit-detail_#{$season}/detail-your-team-name_#{$season}.png');
+    }
+    .kit-collar {
+      @extend .kf-collar-base-round, .kf-red-1;
+    }
+    &.GK {
+        .kit-base {
+            @extend .kf-dark-green-2;
+        }
+        .kit-detail {
+        	background-image:url('../img/kit-detail_#{$season}/detail-your-team-name-gk_#{$season}.png');
+    	}
+        .kit-collar {
+            @extend .kf-collar-base-round, .kf-dark-green-2;
+        }
+    }
+}
+```
+
+You can refer to the demo page 'demo/kit-components.html' to see the current available kit components and 'demo/colours.html' to see default list of colour values. 
 
 # Compatibility 
