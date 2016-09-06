@@ -20,7 +20,7 @@ All you need to create a kit is the following HTML structure. Simply replace the
 
 # Team Classes
 
-**English Premier League**
+**Premier League**
 
 - afc-bournemouth_1617
 - arsenal_1617
