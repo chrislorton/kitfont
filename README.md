@@ -209,7 +209,7 @@ A series of layers which are stacked on top of one another. Layer 1 is the 'bott
 Contains a PNG image of the kit detail (sponsor, badge, manufacturer)
 
 ```
-If $kit-visible is set to false the contents of this layer will not appear
+If $kit-visible is set to 'false' the contents of this layer will not appear
 ```
 
 **.kit-collar**  
