@@ -1,7 +1,3 @@
-# Kitfont
-
-A font which can be used to make accurate fonty versions of the EPL &amp; EFL 2016-17 kits
-
 # How to Use
 
 All you need to create a kit is the following HTML structure. Simply replace the team class with the appropriate class. See below for a full list of team classes.
