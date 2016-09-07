@@ -143,6 +143,12 @@ The master file from which to compile
 ```
 
 ```
+variables.scss
+
+Contains a list of global variables
+```
+
+```
 colours.scss
 
 Contains a list of colour variables
@@ -167,7 +173,7 @@ Contains the styling for all 92 EPL/EFL teams
 
 # Variables
 
-Inside kit-templates.scss there are two master variables:
+Inside variables.scss there are 4 variables:
 
 **$kit-size**
 
@@ -179,7 +185,7 @@ default = 80px
 
 **$detail-visible**
 
-This variable will show or hide the content of the '.kit-detail' layer, effectively showing or hiding the team badge, sponsor and manufacturer. Ideal if you want to avoid licensing issues ;)
+Show or hide the content of the '.kit-detail' layer, effectively showing or hiding the team badge, sponsor and manufacturer. Ideal if you want to avoid licensing issues ;)
 
 ```
 default = true
@@ -187,6 +193,22 @@ default = true
 ```
 true = shows the kit detail
 false = hides the kit detail
+```
+
+**$season**
+
+Set the class names in accordance with the current season value. You can change or remove this value if you wish
+
+```
+default = 1617
+```
+
+**$img-path**
+
+Sets the path to the image folder
+
+```
+default = '../img/'
 ```
 
 # Adding Custom Kits
