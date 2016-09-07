@@ -286,4 +286,10 @@ There is a known incompatability on certain kits that contain gradients when usi
 - Cheltenham Town
 - Hartlepool United
 
-By default (with $kit-detail set to 'true') this will not be an issue as the gradient effect is added to the .'kit-detail' PNG image. However, with $kit-detail set to 'false' the gradient effect is reproduced by using a font mask and a text-gradient which is currently only supported in Webkit browsers.
+By default (with $detail-visible set to 'true') this will not be an issue as the gradient effect is added to the .'kit-detail' PNG image. However, with $kit-detail set to 'false' the gradient effect is reproduced by using a font mask and a text-gradient which is currently only supported in Webkit browsers.
+
+# Planned improvements
+
+For the pedants out there (like me) - there are some slight inconsistencies with the positioning of some kit components, meaning there are occasional (very small) gaps between components. This is more noticeable the larger your kits are.
+
+Also, the .kit-detail layer is slightly offset from the center, and as a result doesn't perfectly match the edges of the kit base layer. I aim to fix this very soon by resizing the kit images.
