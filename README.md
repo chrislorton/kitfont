@@ -279,7 +279,7 @@ You can refer to the demo page 'demo/kit-components.html' to see the current ava
 
 # Compatibility 
 
-Not supported in IE7 and below. 
+Not supported in IE9 and below. 
 
 There is a known incompatability on certain kits that contain gradients when using non-Webkit browsers. During the 16/17 season this includes:  
 - Coventry City
