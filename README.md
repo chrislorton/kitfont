@@ -20,7 +20,7 @@ All you need to create a kit is the following HTML structure. Simply replace the
 
 # Team Classes
 
-**English Premier League**
+**Premier League**
 
 - afc-bournemouth_1617
 - arsenal_1617
@@ -143,6 +143,12 @@ The master file from which to compile
 ```
 
 ```
+variables.scss
+
+Contains a list of global variables
+```
+
+```
 colours.scss
 
 Contains a list of colour variables
@@ -167,7 +173,7 @@ Contains the styling for all 92 EPL/EFL teams
 
 # Variables
 
-Inside kit-templates.scss there are two master variables:
+Inside variables.scss there are 4 variables:
 
 **$kit-size**
 
@@ -179,7 +185,7 @@ default = 80px
 
 **$detail-visible**
 
-This variable will show or hide the content of the '.kit-detail' layer, effectively showing or hiding the team badge, sponsor and manufacturer. Ideal if you want to avoid licensing issues ;)
+Show or hide the content of the '.kit-detail' layer, effectively showing or hiding the team badge, sponsor and manufacturer. Ideal if you want to avoid licensing issues ;)
 
 ```
 default = true
@@ -187,6 +193,22 @@ default = true
 ```
 true = shows the kit detail
 false = hides the kit detail
+```
+
+**$season**
+
+Set the class names in accordance with the current season value. You can change or remove this value if you wish
+
+```
+default = 1617
+```
+
+**$img-path**
+
+Sets the path to the image folder
+
+```
+default = '../img/'
 ```
 
 # Adding Custom Kits
@@ -209,7 +231,7 @@ A series of layers which are stacked on top of one another. Layer 1 is the 'bott
 Contains a PNG image of the kit detail (sponsor, badge, manufacturer)
 
 ```
-If $kit-visible is set to 'false' the contents of this layer will not appear
+If $detail-visible is set to 'false' the contents of this layer will not appear
 ```
 
 **.kit-collar**  
@@ -264,4 +286,10 @@ There is a known incompatability on certain kits that contain gradients when usi
 - Cheltenham Town
 - Hartlepool United
 
-By default (with $kit-detail set to 'true') this will not be an issue as the gradient effect is added to the .'kit-detail' PNG image. However, with $kit-detail set to 'false' the gradient effect is reproduced by using a font mask and a text-gradient which is currently only supported in Webkit browsers.
+By default (with $detail-visible set to 'true') this will not be an issue as the gradient effect is added to the .'kit-detail' PNG image. However, with $kit-detail set to 'false' the gradient effect is reproduced by using a font mask and a text-gradient which is currently only supported in Webkit browsers.
+
+# Planned improvements
+
+For the pedants out there (like me) - there are some slight inconsistencies with the positioning of some kit components, meaning there are occasional (very small) gaps between components. This is more noticeable the larger your kits are.
+
+Also, the .kit-detail layer is slightly offset from the center, and as a result doesn't perfectly match the edges of the kit base layer. I aim to fix this very soon by resizing the kit images.
