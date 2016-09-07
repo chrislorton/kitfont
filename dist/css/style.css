@@ -387,16 +387,12 @@
 /*----------------------------------------
 CONTENTS:
 ------------------------------------------
-1. Kit Variables
-2. Kit Defaults
-3. Extras
-4. Example Media Query
+1. Kit Defaults
+2. Extras
+3. Example Media Query
 ----------------------------------------*/
 /*----------------------------------------
-1. Kit Variables
-----------------------------------------*/
-/*----------------------------------------
-2. Kit Defaults
+1. Kit Defaults
 ----------------------------------------*/
 .kit-detail {
   visibility: visible; }
@@ -420,6 +416,8 @@ CONTENTS:
 .kit-layer-7::after,
 .kit-layer-8::before,
 .kit-layer-8::after,
+.kit-detail::before,
+.kit-detail::after,
 .kit-collar::before,
 .kit-collar::after {
   font-family: 'kitfont';
@@ -437,8 +435,7 @@ CONTENTS:
   position: relative;
   font-size: 80px;
   height: 80px;
-  width: 80px;
-  align-self: center; }
+  width: 80px; }
   .kit::before {
     z-index: 11;
     content: '';
@@ -464,14 +461,31 @@ CONTENTS:
   .kit .kit-detail {
     z-index: 9;
     background-repeat: no-repeat;
-    position: relative;
     height: 100%;
     background-size: 100% 100%; }
   .kit .kit-collar {
     z-index: 10; }
 
+.kit-base,
+.kit-layer-1,
+.kit-layer-2,
+.kit-layer-3,
+.kit-layer-4,
+.kit-layer-5,
+.kit-layer-6,
+.kit-layer-7,
+.kit-layer-8,
+.kit-detail,
+.kit-collar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 80px;
+  display: block; }
+
 /*----------------------------------------
-3. Extras
+2. Extras
 ----------------------------------------*/
 .kf-collar-v-5, .burnley_1617 .kit-layer-4, .leicester-city_1617 .kit-layer-6, .stoke-city_1617 .kit-layer-2, .huddersfield-town_1617 .kit-layer-4, .newcastle-united_1617 .kit-layer-7, .rotherham-united_1617 .kit-layer-5, .bolton-wanderers_1617 .kit-layer-2, .cambridge-united_1617 .kit-layer-7, .colchester-united_1617 .kit-layer-4, .crawley-town_1617 .kit-layer-2, .exeter-city_1617 .kit-layer-4, .stevenage_1617 .kit-layer-3, .yeovil-town_1617 .kit-layer-2,
 .kf-collar-v-9,
@@ -494,7 +508,7 @@ CONTENTS:
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15); }
 
 /*----------------------------------------
-4. Example Media Query
+3. Example Media Query
 ----------------------------------------*/
 @media (max-width: 600px) {
   .kit {
@@ -919,8 +933,6 @@ CONTENTS:
 .kit-collar.kf-grey-blue-3:before, .manchester-city_1617 .kit-collar.kit-layer-1:before, .kit-collar.kf-grey-blue-3:after, .manchester-city_1617 .kit-collar.kit-layer-1:after {
   color: #191b21; }
 
-/*----------------------------------------*/
-/*----------------------------------------*/
 /*----------------------------------------
 CONTENTS:
 ------------------------------------------

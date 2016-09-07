@@ -1,20 +1,13 @@
 /*----------------------------------------
 CONTENTS:
 ------------------------------------------
-1. Kit Variables
-2. Kit Defaults
-3. Extras
-4. Example Media Query
+1. Kit Defaults
+2. Extras
+3. Example Media Query
 ----------------------------------------*/
 
 /*----------------------------------------
-1. Kit Variables
-----------------------------------------*/
-$kit-size: 80px;
-$detail-visible: true;
-
-/*----------------------------------------
-2. Kit Defaults
+1. Kit Defaults
 ----------------------------------------*/
 
 @if $detail-visible == true {
@@ -38,20 +31,21 @@ $detail-visible: true;
 .kit-layer-6,
 .kit-layer-7,
 .kit-layer-8,
+.kit-detail,
 .kit-collar {
-  &::before,
-  &::after {
-    font-family:'kitfont';
-    display:block;
-    position:absolute;
-    top:0;
-    left:0;
-    height:$kit-size;
-    width:$kit-size;
-    line-height:$kit-size;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+    &::before,
+    &::after {
+        font-family:'kitfont';
+        display:block;
+        position:absolute;
+        top:0;
+        left:0;
+        height:$kit-size;
+        width:$kit-size;
+        line-height:$kit-size;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 }
 .kit {
     position:relative;
@@ -61,7 +55,7 @@ $detail-visible: true;
     &::before {
         z-index:11;
         content:'';
-        background-image:url('../img/kit-shadows.svg');
+        background-image:url('#{$img-path}/kit-shadows.svg');
     }
     .kit-base {
       @extend .kf-base;
@@ -94,7 +88,6 @@ $detail-visible: true;
     .kit-detail {
       z-index:9;
       background-repeat:no-repeat;
-      position: relative;
       height: 100%;
       background-size: 100% 100%;
     }
@@ -102,9 +95,27 @@ $detail-visible: true;
       z-index:10;
     }
 }
+.kit-base,
+.kit-layer-1,
+.kit-layer-2,
+.kit-layer-3,
+.kit-layer-4,
+.kit-layer-5,
+.kit-layer-6,
+.kit-layer-7,
+.kit-layer-8,
+.kit-detail,
+.kit-collar {
+    position:absolute;
+    top:0;
+    left:0;
+    height:$kit-size;
+    width:$kit-size;
+    display:block;
+}
 
 /*----------------------------------------
-3. Extras
+2. Extras
 ----------------------------------------*/
 
 .kf-collar-v-5,
@@ -114,7 +125,7 @@ $detail-visible: true;
 }
 
 /*----------------------------------------
-4. Example Media Query
+3. Example Media Query
 ----------------------------------------*/
 
 @media (max-width: 600px) {
