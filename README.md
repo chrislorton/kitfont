@@ -293,3 +293,5 @@ By default (with $detail-visible set to 'true') this will not be an issue as the
 For the pedants out there (like me) - there are some slight inconsistencies with the positioning of some kit components, meaning there are occasional (very small) gaps between components. This is more noticeable the larger your kits are.
 
 Also, the .kit-detail layer is slightly offset from the center, and as a result doesn't perfectly match the edges of the kit base layer. I aim to fix this very soon by resizing the kit images.
+
+There are also quite a lot of missing GK kits in League One and League Two. Currently I have generic green GK kits for those teams for which I couldn't find any reference.
