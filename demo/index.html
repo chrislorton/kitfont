@@ -26,8 +26,13 @@
     .page-header {
         text-align:center;
         display:flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         padding:150px 0px 100px 0px;
         align-items:center;
+        -webkit-align-items:center;
+        -ms-flex-align: center;
         background: url("../demo/img/page-header-bg.jpg") no-repeat center bottom;
         background-size:cover;
     }
@@ -41,7 +46,12 @@
     }
     .row > div {
         display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         flex-direction: column;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
     }
     .kit {
         font-size: 180px !important;
@@ -104,8 +114,16 @@
     }
     .card-kit {
         display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         flex-direction: column;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
         align-items: center;
+        align-items:center;
+        -webkit-align-items:center;
+        -ms-flex-align: center;
         height: 233px;
         background: rgba(0,0,0,0.2);
         padding: 27px 50px;
