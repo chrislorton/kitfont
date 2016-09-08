@@ -279,7 +279,15 @@ You can refer to the demo page 'http://kitfont.chrislorton.com/components.html' 
 
 # Compatibility 
 
-Not supported in IE8 and below. 
+- IE10 +
+- Chrome 21+
+- Firefox 28+
+- Safari 6.1+
+- Opera 12+
+- Edge 12+
+
+- iOS 7+
+- Android 4.4+
 
 There is a known incompatability on certain kits that contain gradients when using non-Webkit browsers. During the 16/17 season this includes:  
 - Coventry City
