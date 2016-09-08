@@ -285,7 +285,6 @@ You can refer to the demo page 'http://kitfont.chrislorton.com/components.html' 
 - Safari 6.1+
 - Opera 12+
 - Edge 12+
-
 - iOS 7+
 - Android 4.4+
 
