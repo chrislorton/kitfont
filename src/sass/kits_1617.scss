@@ -2184,20 +2184,20 @@ overridden if needed
         @extend .kf-body-stripes-1, .kf-white;
     }
     .kit-layer-2 {
-        @extend .kf-collar-round-1, .kf-red-1;
-    }
-    .kit-layer-3 {
-    }
-    .kit-layer-4 {
         @extend .kf-sleeves-2, .kf-white;
     }
-    .kit-layer-5 {
+    .kit-layer-3 {
         @extend .kf-sleeves-3, .kf-blue-2;
+    }
+    .kit-layer-4 {
+        @extend .kf-sleeves-end-9, .kf-red-1;
+    }
+    .kit-layer-5 {
+        @extend .kf-collar-round-1, .kf-red-1;
     }
     .kit-layer-6 {
     }
     .kit-layer-7 {
-        @extend .kf-sleeves-end-9, .kf-red-1;
     }
     .kit-layer-8 {
     }
