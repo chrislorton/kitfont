@@ -275,11 +275,11 @@ An example of how to apply this to a team:
 }
 ```
 
-You can refer to the demo page 'demo/kit-components.html' to see the current available kit components and 'demo/colours.html' to see default list of colour values. 
+You can refer to the demo page 'http://kitfont.chrislorton.com/components.html' to see the current available kit components and 'http://kitfont.chrislorton.com/colours.html' to see default list of colour values. 
 
 # Compatibility 
 
-Not supported in IE9 and below. 
+Not supported in IE8 and below. 
 
 There is a known incompatability on certain kits that contain gradients when using non-Webkit browsers. During the 16/17 season this includes:  
 - Coventry City
@@ -295,3 +295,7 @@ For the pedants out there (like me) - there are some slight inconsistencies with
 Also, the .kit-detail layer is slightly offset from the center, and as a result doesn't perfectly match the edges of the kit base layer. I aim to fix this very soon by resizing the kit images.
 
 There are also quite a lot of missing GK kits in League One and League Two. Currently I have generic green GK kits for those teams for which I couldn't find any reference.
+
+# Reference
+
+http://kitfont.chrislorton.com/
