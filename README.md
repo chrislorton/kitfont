@@ -279,7 +279,7 @@ You can refer to the demo page 'http://kitfont.chrislorton.com/components.html' 
 
 # Compatibility 
 
-- IE10 +
+- IE10+
 - Chrome 21+
 - Firefox 28+
 - Safari 6.1+
