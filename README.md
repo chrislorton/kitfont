@@ -295,3 +295,7 @@ For the pedants out there (like me) - there are some slight inconsistencies with
 Also, the .kit-detail layer is slightly offset from the center, and as a result doesn't perfectly match the edges of the kit base layer. I aim to fix this very soon by resizing the kit images.
 
 There are also quite a lot of missing GK kits in League One and League Two. Currently I have generic green GK kits for those teams for which I couldn't find any reference.
+
+# Reference
+
+http://kitfont.chrislorton.com/
