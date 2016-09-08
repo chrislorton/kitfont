@@ -275,11 +275,11 @@ An example of how to apply this to a team:
 }
 ```
 
-You can refer to the demo page 'demo/kit-components.html' to see the current available kit components and 'demo/colours.html' to see default list of colour values. 
+You can refer to the demo page 'http://kitfont.chrislorton.com/components.html' to see the current available kit components and 'http://kitfont.chrislorton.com/colours.html' to see default list of colour values. 
 
 # Compatibility 
 
-Not supported in IE9 and below. 
+Not supported in IE8 and below. 
 
 There is a known incompatability on certain kits that contain gradients when using non-Webkit browsers. During the 16/17 season this includes:  
 - Coventry City
