@@ -32,6 +32,7 @@ CONTENTS:
 .kit-layer-8,
 .kit-detail,
 .kit-collar {
+    -webkit-transform:translate3d(0, 0, 0);
     &::before,
     &::after {
         font-family:'kitfont';
